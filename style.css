@@ -1,0 +1,182 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navbar{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    height: 550px;
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 60%;
+   
+    
+}
+.box{
+   border-radius: 20px;
+    transition: 0.5s ease-in;
+    cursor:pointer;
+
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box1{
+    background-image: url(./pic-1.png);
+   background-position: center;
+  
+   background-size:cover;
+   text-align: center;
+    
+}
+.box2{
+    background-image: url(./pic-2.png);
+   background-position: center;
+   text-align: center;
+   background-size:cover;
+   
+    
+}
+.box3{
+    background-image: url(./pic-3.png);
+   background-position: center;
+   text-align: center;
+   background-size:cover;
+   
+    
+}
+.box4{
+    background-image: url(./pic-4.png);
+   background-position: center;
+   text-align: center;
+   background-size:cover;
+   
+    
+}
+.sahara{
+    /* height: 50%;
+   
+    background-color: aqua; */
+    text-align:start;
+    width: 50%;
+    color: white;
+    margin-left:100px;
+    margin-top:100px;
+    margin-right: 20px;
+   
+    
+}
+h1{
+    font-size: 80px;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    
+}
+.button{
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+}
+/* mobile view */
+@media screen and (min-width:250px) and (max-width: 500px){
+    
+    body{
+        background-size: auto;
+        background-repeat: repeat;
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: 250px;
+        justify-content: space-around;
+        width: 100%;
+       
+    }
+    ul li{
+        display: block;
+        margin-top: 8px;
+    }
+    .box{
+        height: 250px;
+        
+    }
+    .container2{
+        display: block;
+        
+        
+    }
+    .sahara{
+        margin-left:  28px;
+        margin-bottom: 40px;
+        /* margin: 0px 0px 40px 28px; */
+        width: 80%;
+        
+    }
+    h1{
+        font-size: 60px;
+    }
+    .button{
+        height: 40px;
+        width: 130px;
+        border-radius: 20px;
+}
+}
+/* tablet view */
+@media screen  and (min-width:500px) and (max-width:900px){
+body{
+   
+    background-repeat: repeat;
+    background-size: auto;
+    /* width: 100%; */
+
+}
+.container2{
+    display: block;
+}
+.sahara{
+        margin-left:  100px;
+        margin-bottom: 40px;
+        
+        /* width: 80%; */
+    }
+.box1{
+    background-repeat: no-repeat;
+}
+.grid{
+    grid-template-columns: 450px;
+    /* justify-self: center; */
+    row-gap: 60px;
+    justify-content: space-around;
+    width: 100%;
+    
+   
+}
+.box{
+    height: 250px;
+    
+}
+}
+
